@@ -283,7 +283,7 @@ body {
 .dr {
     display: inline-block;
     /* background: linear-gradient(to right, #9e11d0, #ff3766, #ffab02); */
-    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+   background: linear-gradient(to right, #8a2be2, #ff69b4);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -420,7 +420,7 @@ body {
 
 #h nav a.ac {
     /* background: linear-gradient(to right, #9e11d0, #ff3766, #ffab02); */
-    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+   background: linear-gradient(to right, #8a2be2, #ff69b4);
     color: #fff;
     box-shadow: 0 10px 25px rgba(214, 21, 154, .15);
     border: 0
@@ -581,7 +581,8 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
     flex-wrap: wrap
 }
 
@@ -734,7 +735,7 @@ body {
     top: 8px;
     right: 8px;
     /* background: linear-gradient(45deg, #9e11d0, #ff3766, #ffab02); */
-    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+   background: linear-gradient(to right, #8a2be2, #ff69b4);
 
     border-radius: calc(20px + 5 * (100vw - 320px) / 1080)
 }
@@ -766,7 +767,7 @@ body {
 .u i {
     margin: auto;
     /* background: linear-gradient(45deg, #9e11d0, #ff3766, #ffab02); */
-    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+   background: linear-gradient(to right, #8a2be2, #ff69b4);
     display: flex;
     align-items: center;
     justify-content: center;
