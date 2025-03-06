@@ -575,7 +575,7 @@ body {
 }
 
 #a {
-    padding-left: 12vw;
+    /* padding-left: 12vw; */
     padding-top: 10%;
     padding-bottom: 10%;
     width: 100%;
@@ -614,7 +614,8 @@ body {
 #a h1 {
     font-weight: 800;
     font-size: calc(25px + 15 * (100vw - 320px) / 1080);
-    white-space: nowrap
+    white-space: nowrap;
+    text-align: center;
 }
 
 #a h1 strong {
@@ -631,7 +632,10 @@ body {
 }
 
 #a .l {
-    width: 37%
+    width: 70%;
+    box-shadow: 0 10px 25px rgba(62, 57, 78, .2);
+    padding: 30px;
+    border-radius: calc(20px + 5*(100vw - 320px) / 1080);
 }
 
 #a .l:before {
@@ -680,7 +684,9 @@ body {
 #a .in .dr {
     font-size: calc(18px + 10 * (100vw - 320px) / 1080)
 }
-
+.dr1 {
+    font-size: calc(18px + 10 * (100vw - 320px) / 1080)
+}
 #a .in .ipv4 {
     cursor: pointer
 }
@@ -2111,4 +2117,48 @@ svg.leaflet-image-layer.leaflet-interactive path {
     left: 0;
     margin-left: -12px;
     border-right-color: #fff;
+}
+.ip-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to right, rgb(102, 125, 182), rgb(0, 130, 200), rgb(0, 130, 200), rgb(102, 125, 182)) text;
+}
+
+.ip-item {
+    font-size: calc(12px + 1*(100vw - 320px) / 1080);
+    color: #7d778d;
+    /* font-size: 14px; */
+}
+
+.ip-item strong {
+    display: block;
+    font-weight: 800;
+    /* color: #ffeb3b; Highlighted Text */
+    font-size: calc(14px + 1*(100vw - 320px) / 1080);
+    margin-top: 7px;
+}
+
+.copy-status {
+    display: block;
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+@media (max-width: 768px) {
+    .ip-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .ip-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
