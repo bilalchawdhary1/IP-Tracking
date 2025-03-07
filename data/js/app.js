@@ -4975,3 +4975,14 @@ function gtag() {
 }
 gtag('js', new Date());
 gtag('config', 'G-35H8NXW5F4');
+
+// Apply IP Address Mask
+document.addEventListener("DOMContentLoaded", function () {
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+        initialCountry: "pk",  // Default to Pakistan
+        separateDialCode: true, // Shows country code separately
+        preferredCountries: ["pk", "us", "gb"], // Commonly used countries
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+    });
+});

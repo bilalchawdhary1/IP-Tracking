@@ -41,6 +41,10 @@
     <link rel="stylesheet" href="/data/css/style.css?v=1732198767">
     <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
         type="83254cf9912ea047de57aea6-text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+
 </head>
 
 <body class="by">
@@ -55,7 +59,7 @@
             <ul class="un">
                 <li><a class="a ac" title="My IP address and my location" href="/">IP address</a></li>
                 <li><a class="a" title="Speed test" href="/mobile-traking.html">Mobile Traking</a></li>
-                <li><a class="a" title="Articles" href="/singin">SingIn</a></li>
+                <li><a class="a" title="Articles" href="/signin">Sign In</a></li>
             </ul>
             <div class="nv"><img alt="Menu" src="/data/img/nav.svg"></div>
             <div class="ln"></div>
@@ -67,45 +71,28 @@
         </div>
         <div class="l">
             <h1>
-                <span class="dr">What is my IP address and location?</span>
+                <span class="dr">What is My Mobile Location and IP Address?</span>
             </h1>
-            <form class="f" method="post" action="/">
-                <input type="text" name="ip" autocomplete="off" placeholder="Check another ip address ...">
-                <input type="hidden" name="token" value="fb74ae7209d4c3d3475b5a39a21eb461dcf3a1d9fd47def1">
+            <form class="f phone-container" method="post" action="/">
+                <input type="tel" id="phone" placeholder="Enter phone number">
+                <!-- <input type="hidden" name="token" value="fb74ae7209d4c3d3475b5a39a21eb461dcf3a1d9fd47def1"> -->
                 <button type="submit"><img alt="Search" src="/data/img/search.svg"></button>
             </form>
-            <div class="ip-container">
+            <div class="mobile-ip-container">
                 <div class="ip-item">
-                    <strong>My IP Address V4</strong>
-                    <strong><span class="dr ip-value ipv4">223.123.15.90</span></strong>
-                </div>
-                <div class="ip-item">
-                    <strong>Port Used</strong>
-                    <strong><span class="dr ip-value">47666</span></strong>
-                </div>
-                <div class="ip-item">
-                    <strong>My IP V6</strong>
-                    <strong class="dr ipv6">...</strong>
-                </div>
-                <div class="ip-item">
-                    <strong>Connection Type</strong>
-                    <small>Wireless</small>
-                </div>
-                <div class="ip-item">
-                    <strong>Internet Provider</strong>
-                    <small>CMPak Limited</small>
-                </div>
-                <div class="ip-item">
-                    <strong>ASN</strong>
-                    <small>AS59257</small>
-                </div>
-                <div class="ip-item">
-                    <strong>Host Name</strong>
-                    <small>223.123.15.90</small>
-                </div>
-                <div class="ip-item">
-                    <strong>IP Range</strong>
-                    <small>223.123.15.90/32</small>
+                    <h2 class="dr">How it works</h2>
+                    <div class="ip-item m-q">
+                        <strong>1. Request Location</strong>
+                        <p>Enter a phone number and we will send an SMS with tracking <br> link to that phone</p>
+                    </div>
+                    <div class="ip-item m-q">
+                        <strong>2. Mobile phone shares location</strong>
+                        <p>User clicks the link, and allows sharing phone the location</p>
+                    </div>
+                    <div class="ip-item m-q">
+                        <strong>3. Get phone location data</strong>
+                        <small>As soon as the user allows location sharing, you will be <br> notified via email to view the collected data</small>
+                    </div>
                 </div>
             </div>
         </div>
