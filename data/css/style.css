@@ -2212,7 +2212,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 600px) {
   #a h1 {
-    font-size: calc(14px + 15*(100vw - 320px) / 1080);
+    font-size: calc(12px + 15*(100vw - 320px) / 1080);
   }
 }
 .phone-container {
