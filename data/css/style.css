@@ -505,7 +505,7 @@ body {
   margin-left: 15px;
   transition: 0.2s;
   padding: 12px;
-  background: linear-gradient(45deg, #9e11d0, #ff3766, #ffab02);
+ background: linear-gradient(to right, #667eea, #764ba2);
   display: none;
   align-items: center;
   justify-content: center;
@@ -789,7 +789,7 @@ body {
 
 .u i {
   margin: auto;
-  /* background: linear-gradient(45deg, #9e11d0, #ff3766, #ffab02); */
+  /*background: linear-gradient(to right, #667eea, #764ba2); */
   background: linear-gradient(to right, #667eea, #764ba2);
   display: flex;
   align-items: center;
@@ -1161,7 +1161,7 @@ body {
 .dct form button[type="submit"] {
   padding: calc(10px + 1%);
   color: #fff;
-  background: linear-gradient(45deg, #9e11d0, #ff3766, #ffab02);
+ background: linear-gradient(to right, #667eea, #764ba2);
   border-radius: calc(20px + 5 * (100vw - 320px) / 1080);
 }
 
@@ -1255,7 +1255,7 @@ body {
   #a {
     flex-direction: column;
     text-align: center;
-    padding-top: 300px;
+    padding-top: 170px;
     padding-left: 0;
     justify-content: flex-start;
     height: auto;
@@ -2203,6 +2203,16 @@ svg.leaflet-image-layer.leaflet-interactive path {
 @media (max-width: 480px) {
   .ip-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  #a h1 {
+    font-size: calc(16px + 15*(100vw - 320px) / 1080);
+  }
+}
+@media (max-width: 600px) {
+  #a h1 {
+    font-size: calc(14px + 15*(100vw - 320px) / 1080);
   }
 }
 .phone-container {
